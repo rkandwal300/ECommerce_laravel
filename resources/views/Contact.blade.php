@@ -39,10 +39,10 @@
         </div>
 
 
-            <div id="Alert"> array happy birthday </div>
+            {{-- <div id="Alert"> array happy birthday </div> --}}
 
 
-        <form method = 'post'  action="{{url('contact_detail')}}"  class='h-fit   w-[600px]  selection:bg-red-400 px-4  border-2  border-gray-200  mr-4 rounded-md shadow-lg '> 
+        <form method='post'  action="{{url('contact_detail')}}"  class='h-fit   w-[600px]  selection:bg-red-400 px-4  border-2  border-gray-200  mr-4 rounded-md shadow-lg '> 
             @csrf 
 
         <div class = 'h-[82px] w-full flex justify-start items-center text-3xl font-semibold text-gray-700  pl-4     '> Ask Your Queries</div>

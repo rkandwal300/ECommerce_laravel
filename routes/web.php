@@ -14,16 +14,15 @@ use App\Http\Controllers\Contact ;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::view('/h','Eg') ;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/','Home');
+Route::view('/products','ProductListPage');
 
 
-Route::get('/h', function () {
-    return view('HeaderPage');
-});
 Route::view('/about','About') ;
 Route::view('/contact','Contact') ;
 Route::post('/contact_detail',[Contact::class ,'index']) ;
 
+Route::post('/SaveProduct',[Contact::class ,'SaveProducts']) ;
+// Route::post('/form_submit',[Contact::class ,'SaveProducts']) ;
